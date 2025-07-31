@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🛍 Grocery Manager"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#2C3E50"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/item_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="🛒 Item Name"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#666"
+            android:backgroundTint="#BBDEFB"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/quantity_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="🔢 Quantity"
+            android:inputType="number"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#666"
+            android:backgroundTint="#C8E6C9"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/price_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="💰 Price"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#666"
+            android:backgroundTint="#FFF9C4"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:weightSum="10">
+
+            <Button
+                android:id="@+id/add_button"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="7"
+                android:text="✅ Add Item"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#4CAF50"
+                android:layout_marginEnd="8dp" />
+
+            <ImageButton
+                android:id="@+id/full_mic_button"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="3"
+                android:src="@android:drawable/ic_btn_speak_now"
+                android:contentDescription="Voice input"
+                android:background="@android:drawable/btn_default"
+                android:scaleType="centerInside"
+                android:backgroundTint="#009688"
+                android:elevation="6dp"
+                android:padding="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/clear_button"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="🗑️ Clear List"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#F44336"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/grocery_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Grocery List will appear here"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:background="#E1F5FE"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#E1F5FE" />
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💳 Total: ₹0.0"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:padding="16dp"
+            android:background="#DCEDC8"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/budget_input"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="📉 Enter Budget (₹)"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textColor="#000"
+            android:textColorHint="#666"
+            android:backgroundTint="#FFE0B2"
+            android:background="@android:drawable/editbox_background_normal"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/budget_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#D32F2F"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="15sp"
+            android:padding="12dp"
+            android:background="#FFEBEE"
+            android:layout_marginBottom="16dp" />
+        <Button
+            android:id="@+id/history_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View History"
+            android:layout_marginTop="12dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
